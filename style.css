@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: slategrey;
+    color: white;
+}
+
+.container{
+    background-color: indigo;
+    margin: 20px auto;
+    width: 60vw;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+.input-el{
+    height: 30px;
+    width: 45vw;
+    margin: 10px;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.enter-btn{
+    padding: 10px 20px;
+    background-color: plum;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+
+
+.ol-el li{
+    display: flex;
+    counter-increment: list-counter;
+    align-items: center;
+    background-color: brown;
+    margin: 20px;
+    padding: 5px;
+}
+
+.ol-el{
+    counter-reset: list-counter;
+}
+
+.ol-el li::before{
+    content: counter(list-counter) '. ';
+    margin-right: 15px;
+}
+
+.task{
+    background-color: darkslategrey;
+    width: 43vw;
+    outline: none;
+}
+
+.delete-btn{
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: plum;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 650px) {
+    .enter-btn{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50vw;
+        margin-top: 5px;
+    }
+    .input-el{
+        width: 96vw;
+        margin: 5px;
+    }
+    .container{
+        padding: 0;
+        width: 100vw;
+    }
+    .ol-el li{
+        margin: 15px 0;
+    }
+    .task{
+        width: 90vw;
+    }
+    h1{
+        margin-bottom: 10px;
+    }
+}
