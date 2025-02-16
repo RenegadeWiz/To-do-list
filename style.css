@@ -4,12 +4,12 @@
 }
 
 body{
-    background-color: slategrey;
+    background-color: #ffd1dc;
+    text-shadow: 5px 0 10px black;
     color: white;
 }
 
 .container{
-    background-color: indigo;
     margin: 20px auto;
     width: 60vw;
     padding: 10px;
@@ -41,7 +41,6 @@ h1{
     display: flex;
     counter-increment: list-counter;
     align-items: center;
-    background-color: brown;
     margin: 20px;
     padding: 5px;
 }
@@ -56,9 +55,9 @@ h1{
 }
 
 .task{
-    background-color: darkslategrey;
     width: 43vw;
     outline: none;
+    font-size: 1.4rem;
 }
 
 .delete-btn{
